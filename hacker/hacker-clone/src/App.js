@@ -3,17 +3,17 @@ import './App.css';
 
 const list = [
   {
-    title: 'React',
+    title: 'React ',
     url: 'https://facebook.github.io/react/',
-    author: 'Jordan Walke',
+    author: 'Philip J. Fry',
     num_comments: 3,
     points: 4,
     objectID: 0,
   },
   {
-    title: 'Redux',
+    title: 'Redux ',
     url: 'https://github.com/reactjs/redux',
-    author: 'Abramov, Clark',
+    author: 'Fansworth, Hubert J.',
     num_comments: 2,
     points: 5,
     objectID: 1,
@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {list.map(item => 
+        {this.state.list.map(item => 
             <div>
               <span>
                 <a href={item.url}>{item.title}</a>
